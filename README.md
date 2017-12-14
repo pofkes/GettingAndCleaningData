@@ -1,5 +1,5 @@
 # GettingAndCleaningData
-
+```
 #download data 
 
 require(dplyr)
@@ -61,6 +61,7 @@ finaldata<-summarise_all(group_by(raw.data, subject, activity), mean)
 
 #remove working lists to free up workspace
 rm(list =ls()[!(ls()=="finaldata"|ls()=="raw.data")] )
+```
 
 
 
