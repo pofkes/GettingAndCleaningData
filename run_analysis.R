@@ -56,7 +56,9 @@ raw.data<-cbind(comb$subject, comb$activity, comb$data)
 #for every subject and every activity will be in finaldata variable
 
 finaldata<-summarise_all(group_by(raw.data, subject, activity), mean)
+#save tidy data as csv
 
+write.csv(finaldata, "./data/finaldata.csv")
 #remove working lists to free up workspace
 rm(list =ls()[!(ls()=="finaldata"|ls()=="raw.data")] )
 
