@@ -1,5 +1,5 @@
 # GettingAndCleaningData
-```
+```R
 #download data 
 
 require(dplyr)
