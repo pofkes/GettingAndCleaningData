@@ -1,4 +1,4 @@
-# GettingAndCleaningData
+# Getting and cleaning data project
 ```R
 #download data 
 
